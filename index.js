@@ -19,8 +19,7 @@ function deepestChild() {
   var child = curr.querySelector("div");
   while (child) {
     curr = child;
-    child = curr[0];
-    console.log("loop")
+    child = curr.querySelector("div");
   }
   return curr;
 }
